@@ -61,7 +61,10 @@ body {
     "history history history history history"; /* Changes done here */
   max-width: 100%;
   max-height: 100%;
+<<<<<<< HEAD
+=======
   margin: 1em 0em 0em 1em; /* Changes done here, added some margin. See what happens when you remove the margin */ /* top right bottom left */
+>>>>>>> c922268dbc3c7c5ac7eb69688f5046035468b2a7
   grid-gap: 1em; /* Changes done here */
   background: #ffffff;
   border-radius: 22px 0px 0px 0px;

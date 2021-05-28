@@ -44,7 +44,13 @@ const LineChart = () => {
               title: () => null
             }
           },
+<<<<<<< HEAD
+          responsive: true,
+          maintainAspectRatio: false
+
+=======
           responsive: true
+>>>>>>> c922268dbc3c7c5ac7eb69688f5046035468b2a7
         }}
         data={data}
         height={100}

@@ -1,0 +1,414 @@
+:root {
+  --main-radius: 22px;
+  --main-padding: 5px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Changes done here */
+.lineChart {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 100%; /* Changes done here */
+  grid-template-rows: 0.1fr 1.5fr; /* Changes done here */
+  grid-template-areas:
+    "nav" /* Changes done here */ /* since it has only one column i have added nav only once (same for rest) */
+    "main-content" /* Changes done here */
+    "main-content" /* Changes done here */
+    "main-content" /* Changes done here */
+    "main-content"; /* Changes done here */
+
+  grid-gap: 0em;
+  font-weight: 800;
+  font-size: 12px;
+  color: #004d40;
+  text-align: center;
+  max-width: 100%;
+  max-height: 100vh;
+  background: #e5e5e5;
+}
+
+/** main content css **/
+#main-content {
+  display: grid;
+  grid-template-columns: 0.2fr 1.2fr; /* Changes done here */
+  grid-template-rows: 1fr 0fr; /* Changes done here */
+  grid-template-areas:
+    "sidebar inner-content" /* Changes done here */
+    "sidebar inner-content" /* Changes done here */
+    "sidebar inner-content" /* Changes done here */
+    "sidebar inner-content"; /* Changes done here */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#inner-content {
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr; /* Changes done here */
+  grid-template-rows: 0.55fr; /* Changes done here */
+  grid-template-areas:
+    "map map map summary summary" /* Changes done here */
+    "tds turbidity ph ec temp" /* Changes done here */
+    "history history history history history"; /* Changes done here */
+  max-width: 100%;
+  max-height: 100%;
+  margin: 1em 0em 0em 1em; /* Changes done here, added some margin. See what happens when you remove the margin */ /* top right bottom left */
+  grid-gap: 1em; /* Changes done here */
+  background: #ffffff;
+  border-radius: 22px 0px 0px 0px;
+}
+
+nav {
+  background: #e5e5e5;
+  grid-area: nav;
+  padding-top: var(--main-padding);
+  gap: 10rem;
+  min-height: 50px;
+}
+
+#sidebar {
+  background: #e5e5e5;
+  grid-area: sidebar;
+  padding-top: var(--main-padding);
+  min-width: 170px;
+}
+
+#messages {
+  background: #6fffd2;
+  grid-area: messages;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#map {
+  margin: 1em 0em 0em 1em;
+  background: #ffffff;
+  grid-area: map;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  min-height: 370px;
+}
+
+#summary {
+  margin: 1em 1em 0em 1em;
+  background-image: linear-gradient(
+    128.48deg,
+    rgba(0, 199, 79, 0.8) 0%,
+    rgba(62, 199, 46, 0.53) 49.48%,
+    rgba(147, 199, 0, 0.368) 100%
+  );
+  grid-area: summary;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  min-height: 370px;
+}
+
+#tds {
+  margin: 1em 0em 0em 1em;
+  background: #ffffff;
+  grid-area: tds;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#turbidity {
+  margin: 1em 0em 0em 1em;
+  background: #ffffff;
+  grid-area: turbidity;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ph {
+  margin: 1em 0em 0em 1em;
+  background: #ffffff;
+  grid-area: ph;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ec {
+  margin: 1em 0em 0em 1em;
+  background: #ffffff;
+  grid-area: ec;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#temp {
+  margin: 1em 1em 0em 1em;
+  background: #ffffff;
+  grid-area: temp;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#history {
+  margin: 1em 1em 2em 1em;
+  background: #ffffff;
+  grid-area: history;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  min-height: 400px;
+}
+
+@media only screen and (max-width: 1239px) {
+  .lineChart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr; /* Changes done here */
+    grid-template-rows: 0.1fr 1.5fr; /* Changes done here */
+    grid-template-areas:
+      "nav" /* Changes done here */ /* since it has only one column i have added nav only once (same for rest) */
+      "main-content" /* Changes done here */
+      "main-content" /* Changes done here */
+      "main-content" /* Changes done here */
+      "main-content"; /* Changes done here */
+
+    grid-gap: 0em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #e5e5e5;
+  }
+
+  /** main content css **/
+  #main-content {
+    display: grid;
+    grid-template-columns: 0.2fr 1.2fr; /* Changes done here */
+    grid-template-rows: 1fr 0fr; /* Changes done here */
+    grid-template-areas:
+      "sidebar inner-content" /* Changes done here */
+      "sidebar inner-content" /* Changes done here */
+      "sidebar inner-content" /* Changes done here */
+      "sidebar inner-content"; /* Changes done here */
+  }
+
+  #inner-content {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px; /* Changes done here */
+    grid-template-rows: 0.6fr 0.2fr 0.5fr; /* Changes done here */
+    grid-template-areas:
+      "map map map summary summary" /* Changes done here */
+      "tds turbidity ph ec temp" /* Changes done here */
+      "history history history history history"; /* Changes done here */
+
+    margin: 1em 0em 0em 1em; /* Changes done here, added some margin. See what happens when you remove the margin */ /* top right bottom left */
+    grid-gap: 1em; /* Changes done here */
+    background: #ffffff;
+    border-radius: 22px 0px 0px 0px;
+  }
+
+  nav {
+    background: #e5e5e5;
+    grid-area: nav;
+    padding-top: var(--main-padding);
+  }
+
+  #sidebar {
+    background: #e5e5e5;
+    grid-area: sidebar;
+    padding-top: var(--main-padding);
+    min-width: 180px;
+  }
+
+  #messages {
+    background: #6fffd2;
+    grid-area: messages;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #map {
+    margin: 1em 0em 0em 1em;
+    background: #ffffff;
+    grid-area: map;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dcdcdc;
+    max-width: 590px;
+    max-height: 370px;
+  }
+
+  #summary {
+    margin: 1em 1em 0em 1em;
+    background-image: linear-gradient(
+      128.48deg,
+      rgba(0, 199, 79, 0.8) 0%,
+      rgba(62, 199, 46, 0.53) 49.48%,
+      rgba(147, 199, 0, 0.368) 100%
+    );
+    grid-area: summary;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dcdcdc;
+    max-width: 415px;
+    max-height: 370px;
+  }
+
+  #tds {
+    margin: 1em 0em 0em 1em;
+    background: #ffffff;
+    grid-area: tds;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dcdcdc;
+    max-width: 170px;
+    max-height: 170px;
+    min-width: 170px;
+    min-height: 170px;
+  }
+
+  #turbidity {
+    margin: 1em 0em 0em 1em;
+    background: #ffffff;
+    grid-area: turbidity;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dcdcdc;
+    max-width: 170px;
+    max-height: 170px;
+    min-width: 170px;
+    min-height: 170px;
+  }
+
+  #ph {
+    margin: 1em 0em 0em 1em;
+    background: #ffffff;
+    grid-area: ph;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dcdcdc;
+    max-width: 170px;
+    max-height: 170px;
+    min-width: 170px;
+    min-height: 170px;
+  }
+
+  #ec {
+    margin: 1em 0em 0em 1em;
+    background: #ffffff;
+    grid-area: ec;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dcdcdc;
+    max-width: 170px;
+    max-height: 170px;
+    min-width: 170px;
+    min-height: 170px;
+  }
+
+  #temp {
+    margin: 1em 1em 0em 1em;
+    background: #ffffff;
+    grid-area: temp;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dcdcdc;
+    max-width: 170px;
+    max-height: 170px;
+    min-width: 170px;
+    min-height: 170px;
+  }
+
+  #history {
+    margin: 1em 1em 2em 1em;
+    background: #ffffff;
+    grid-area: history;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dcdcdc;
+    max-width: 1015px;
+    max-height: 400px;
+  }
+}

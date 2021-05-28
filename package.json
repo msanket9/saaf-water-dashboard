@@ -2,7 +2,7 @@
   "name": "saaf-water",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://msanket9.github.io/saaf-water",
+  "homepage": "https://saaf-water.github.io/saaf-water-dashboard",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",

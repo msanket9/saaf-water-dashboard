@@ -75,11 +75,48 @@ nav {
   min-height: 60px;
 }
 
-#sidebar {
+.sidebar {
   background: #e5e5e5;
   grid-area: sidebar;
   padding-top: var(--main-padding);
-  min-width: 170px;
+  height: 100%;
+  width: 250px;
+}
+.SidebarList{
+  height:auto;
+  padding: 0;
+  width:100%;
+}
+.SidebarList .row{
+width: 100%;
+height:50px;
+color: rgb(70, 68, 68);
+list-style-type: none;
+margin: 0%;
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.SidebarList .row:hover{
+  cursor: pointer;
+  background-color: darkgray;
+  color: blue;
+}
+
+.SidebarList #active{
+  background-color:slategray;
+}
+.row #icon {
+  flex:30%;
+  display: grid;
+  place-items: center;
+}
+
+.row #title{
+  flex: 70%;
+  display: inline-flex;
 }
 
 #messages {
@@ -287,7 +324,9 @@ nav {
     grid-area: sidebar;
     padding-top: var(--main-padding);
     min-width: 180px;
+  
   }
+  
 
   #messages {
     background: #6fffd2;

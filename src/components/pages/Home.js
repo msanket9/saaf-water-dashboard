@@ -16,7 +16,7 @@ function Home() {
           <div id="ph"><LineChart/></div>
           <div id="ec"><LineChart/></div>
           <div id="temp"><LineChart/></div>
-          <div id="history">History</div>
+          <div id="history"><LineChart/></div>
         </div>
       </div>
     </div>

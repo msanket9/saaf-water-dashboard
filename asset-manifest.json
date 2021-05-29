@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/saaf-water-dashboard/static/css/main.7f2dffa1.chunk.css",
+    "main.js": "/saaf-water-dashboard/static/js/main.b947e06f.chunk.js",
+    "main.js.map": "/saaf-water-dashboard/static/js/main.b947e06f.chunk.js.map",
+    "runtime-main.js": "/saaf-water-dashboard/static/js/runtime-main.cb84e9b9.js",
+    "runtime-main.js.map": "/saaf-water-dashboard/static/js/runtime-main.cb84e9b9.js.map",
+    "static/js/2.34f35b98.chunk.js": "/saaf-water-dashboard/static/js/2.34f35b98.chunk.js",
+    "static/js/2.34f35b98.chunk.js.map": "/saaf-water-dashboard/static/js/2.34f35b98.chunk.js.map",
+    "index.html": "/saaf-water-dashboard/index.html",
+    "static/css/main.7f2dffa1.chunk.css.map": "/saaf-water-dashboard/static/css/main.7f2dffa1.chunk.css.map",
+    "static/js/2.34f35b98.chunk.js.LICENSE.txt": "/saaf-water-dashboard/static/js/2.34f35b98.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb84e9b9.js",
+    "static/js/2.34f35b98.chunk.js",
+    "static/css/main.7f2dffa1.chunk.css",
+    "static/js/main.b947e06f.chunk.js"
+  ]
+}

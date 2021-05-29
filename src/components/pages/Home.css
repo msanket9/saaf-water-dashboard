@@ -211,7 +211,7 @@ nav {
   border-style: solid;
   border-width: 1px;
   border-color: #dcdcdc;
-  min-height: 400px;
+  min-height: 350px;
 }
 
 @media only screen and (max-width: 1239px) {
@@ -266,7 +266,6 @@ nav {
       "tds turbidity ph ec temp" /* Changes done here */
       "history history history history history"; /* Changes done here */
 
-    margin: 1em 0em 0em 1em; /* Changes done here, added some margin. See what happens when you remove the margin */ /* top right bottom left */
     grid-gap: 1em; /* Changes done here */
     background: #ffffff;
     border-radius: 22px 0px 0px 0px;
@@ -408,6 +407,6 @@ nav {
     border-width: 1px;
     border-color: #dcdcdc;
     max-width: 1015px;
-    max-height: 400px;
+    max-height: 300px;
   }
 }

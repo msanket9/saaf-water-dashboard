@@ -10,7 +10,7 @@ function Home() {
         <div id="sidebar">Sidebar</div>
         <div id="inner-content">
           <div id="map">Map</div>
-          <div id="summary">Summany</div>
+          <div id="summary">Summary</div>
           <div id="tds" ><LineChart/></div>
           <div id="turbidity"><LineChart/></div>
           <div id="ph"><LineChart/></div>

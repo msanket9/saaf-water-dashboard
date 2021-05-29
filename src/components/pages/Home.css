@@ -104,6 +104,7 @@ nav {
 
 .SidebarList #active {
   background-color: slategray;
+  color: blue;
 }
 .row #icon {
   flex: 30%;

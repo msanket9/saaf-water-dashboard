@@ -21,36 +21,37 @@
   width: 18%;
   height: 100%;
   justify-content: flex-start;
-  padding:0px 20px;
+  padding: 0px 20px;
 }
-.sidebar a{
+.sidebar a {
   display: flex;
   margin: 5px 0px;
   padding: 10px;
   border-radius: 10px;
-  transition: all .2s ease-in-out;
-  color:black;
+  transition: all 0.2s ease-in-out;
+  color: black;
 }
 
-.sidebar a h3{
-  margin-left:5px ;
+.sidebar a h3 {
+  margin-left: 5px;
   font-size: 1.1em;
   font-weight: 400;
 }
 
-.sidebar a:hover{
+.sidebar a:hover {
   background-color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-  color: #2400FF;
+  color: #2400ff;
 }
 
-.active{
+.active {
   background-color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
-.active svg,.active h3{
-  color: #2400FF;
+.active svg,
+.active h3 {
+  color: #2400ff;
 }
 
 .inner_content {
@@ -63,7 +64,7 @@
 
 .message {
   width: 100%;
-  height: 30px;
+  height: 45px;
   background-color: #ff0000;
 }
 .top_content {
@@ -99,7 +100,7 @@
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap:5px
+  gap: 5px;
 }
 .graph_div {
   background: #ffffff;
@@ -107,7 +108,7 @@
   box-sizing: border-box;
   border-radius: 7px;
 }
-.lineChart{
+.lineChart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,28 +124,22 @@
   border-radius: 10px;
 }
 
-@media (max-width:768px){
-  .sidebar{
+@media (max-width: 768px) {
+  .sidebar {
     width: fit-content;
     align-items: center;
     padding: 10px;
   }
-  .sidebar h3{  
+  .sidebar h3 {
     display: none;
   }
-  .inner_content{
+  .inner_content {
     width: 100%;
   }
-  .graphs{
+  .graphs {
     grid-template-columns: 1fr 1fr;
   }
-  .top_content {
-    flex-direction: column;
-    height: fit-content;
-  }
-
-  .map ,.summary{
-    width: 100%;
-    height: 300px;
+  .graph_div {
+    width: 300px;
   }
 }

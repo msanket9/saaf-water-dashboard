@@ -102,7 +102,6 @@
   gap:5px
 }
 .graph_div {
-  width: 200px;
   background: #ffffff;
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
@@ -139,7 +138,13 @@
   .graphs{
     grid-template-columns: 1fr 1fr;
   }
-  .graph_div{
-    width: 300px;
+  .top_content {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .map ,.summary{
+    width: 100%;
+    height: 300px;
   }
 }

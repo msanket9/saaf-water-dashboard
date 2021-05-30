@@ -45,7 +45,7 @@ export function Graphs() {
         <div class="graph_div"> <LineChart /> </div>
         <div class="graph_div"> <LineChart /> </div>
         <div class="graph_div"> <LineChart /> </div>
-        <div class="graph_div"> <LineChart /> </div>
+        <div class="graph_div" id="last-graph"> <LineChart /> </div>
       </div>
       <div class="history"> <LineChart /> </div>
     </>

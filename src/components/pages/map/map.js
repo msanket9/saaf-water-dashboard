@@ -1,6 +1,8 @@
 import React from "react";
 import NavBar from "../NavBar";
 import SideBar from "../Sidebar";
+import MapComponent from "./MapComponent";
+
 export default function map() {
   return (
     <div class="container">
@@ -13,7 +15,7 @@ export default function map() {
         </div>
         <div class="inner_content">
           <div class="message">message</div>
-          <div>Maps</div>
+          <div><MapComponent/></div>
         </div>
       </div>
     </div>

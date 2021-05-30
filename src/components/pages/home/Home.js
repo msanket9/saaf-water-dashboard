@@ -3,6 +3,8 @@ import NavBar from "../NavBar";
 import SideBar from "../Sidebar";
 import "./Home.css";
 import LineChart from '../../charts/LineChart'
+import MapComponent from "../map/MapComponent"
+
 
 function Home() {
   return (
@@ -17,7 +19,7 @@ function Home() {
         <div class="inner_content">
           <div class="message">message</div>
           <div class="top_content">
-            <div class="map">map</div>
+            <div class="map"><MapComponent/></div>
             <div class="summary">summary</div>
           </div>
           <Graphs/>

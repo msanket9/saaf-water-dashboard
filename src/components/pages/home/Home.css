@@ -70,6 +70,15 @@
   justify-content: center;
 }
 
+.messageButton {
+  left: 20.83%;
+  right: 20.83%;
+  top: 20.83%;
+  bottom: 20.83%;
+
+  background: #ffffff;
+}
+
 .top_content {
   height: 300px;
   display: flex;

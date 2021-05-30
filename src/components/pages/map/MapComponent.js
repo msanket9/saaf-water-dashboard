@@ -12,7 +12,6 @@ export default function MapComponent() {
 
   return (
     <ReactMapGL
-      mapStyle="mapbox://styles/mapbox/streets-v11"
       mapboxApiAccessToken={
         "pk.eyJ1IjoibXNhbmtldDkiLCJhIjoiY2twYXo5bW5wMDJnMTJycnRoYjBseGtwNCJ9.P_dFx_rfgoALAEvtRm7iuQ"
       }

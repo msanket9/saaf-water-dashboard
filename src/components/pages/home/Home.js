@@ -24,7 +24,7 @@ function Home() {
         </div>
         <div class="inner_content">
           <div class="message" id="messages">
-            <button onClick={closeMessages} >Close me</button>
+            <button class="messageButton" onClick={closeMessages} >Close me</button>
           </div>
           <div class="top_content">
             <div class="map"><MapComponent/></div>

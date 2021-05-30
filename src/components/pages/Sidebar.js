@@ -7,16 +7,21 @@ import OpacityTwoToneIcon from "@material-ui/icons/OpacityTwoTone";
 export default function SideBar() {
   return (
     <>
-      <NavLink exact activeClassName="active" to="/saaf-water-dashboard/dashboard">
+      <NavLink
+        exact
+        activeClassName="active"
+        to="/saaf-water-dashboard/dashboard"
+      >
         <DashboardTwoToneIcon /> <h3>Dashboard</h3>
       </NavLink>
-      <NavLink activeClassName="active" to="/saaf-water-dashboard/charts">
-        <TimelineIcon /><h3>Charts</h3> 
+      <NavLink to="/saaf-water-dashboard/charts">
+        <TimelineIcon />
+        <h3>Charts</h3>
       </NavLink>
-      <NavLink activeClassName="active" to="/saaf-water-dashboard/maps">
+      <NavLink to="/saaf-water-dashboard/maps">
         <MapTwoToneIcon /> <h3>Maps</h3>
       </NavLink>
-      <NavLink activeClassName="active" to="/saaf-water-dashboard/labtest">
+      <NavLink to="/saaf-water-dashboard/labtest">
         <OpacityTwoToneIcon /> <h3>Lab Test</h3>
       </NavLink>
     </>

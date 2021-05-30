@@ -13,7 +13,7 @@ const LineChart = () => {
         {
           label: "TDS",
           fill:"start",
-          backgroundColor: gradient, // Put the gradient here as a fill color
+          backgroundColor: gradient, 
           borderColor: "rgb(0, 199, 79)",
           borderWidth: 2,
           pointColor: "#fff",

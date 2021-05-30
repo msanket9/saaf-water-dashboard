@@ -2,6 +2,8 @@ import React from "react";
 import NavBar from "../NavBar";
 import SideBar from "../Sidebar";
 import "./Home.css";
+import LineChart from '../../charts/LineChart'
+
 function Home() {
   return (
     <div class="container">
@@ -29,13 +31,13 @@ export function Graphs() {
   return (
     <>
       <div class="graphs">
-        <div class="graph_div"></div>
-        <div class="graph_div"></div>
-        <div class="graph_div"></div>
-        <div class="graph_div"></div>
-        <div class="graph_div"></div>
+        <div class="graph_div"> <LineChart /> </div>
+        <div class="graph_div"> <LineChart /> </div>
+        <div class="graph_div"> <LineChart /> </div>
+        <div class="graph_div"> <LineChart /> </div>
+        <div class="graph_div"> <LineChart /> </div>
       </div>
-      <div class="history">history</div>
+      <div class="history"> <LineChart /> </div>
     </>
   );
 }

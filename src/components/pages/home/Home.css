@@ -99,10 +99,10 @@
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap:5px
 }
 .graph_div {
   width: 200px;
-
   background: #ffffff;
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
@@ -124,3 +124,22 @@
   border-radius: 10px;
 }
 
+@media (max-width:768px){
+  .sidebar{
+    width: fit-content;
+    align-items: center;
+    padding: 10px;
+  }
+  .sidebar h3{  
+    display: none;
+  }
+  .inner_content{
+    width: 100%;
+  }
+  .graphs{
+    grid-template-columns: 1fr 1fr;
+  }
+  .graph_div{
+    width: 300px;
+  }
+}

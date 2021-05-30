@@ -7,36 +7,32 @@ import {SidebarData} from './SidebarData'
 function Home() {
   return (
     <div class="container">
-      <nav>Navbar</nav>
-      <div id="main-content">
-      <div className="sidebar">
-        <ul className="SidebarList" >
-          {SidebarData.map((val, key)=>{
-            return (
-            <li key = {key}
-            className = "row"
-            id={window.location.pathname === val.link ? "active" : ""}
-            onClick={() => {window.location.pathname = val.link}}>
-                {" "}
-                <div id= "icon">{val.icon}</div>{" "}
-                <div id = "title">{val.title}</div>{" "}
-              </li>
-            )
-          })}
-        </ul>
+    <div class="nav">nav</div>
+    <div class="main_content">
+      <div class="sidebar">
+        sidebar
       </div>
-        <div id="inner-content">
-          <div id="map">Map</div>
-          <div id="summary">Summary</div>
-          <div id="tds" ><LineChart/></div>
-          <div id="turbidity"><LineChart/></div>
-          <div id="ph"><LineChart/></div>
-          <div id="ec"><LineChart/></div>
-          <div id="temp"><LineChart/></div>
-          <div id="history"><LineChart/></div>
+      <div class="inner_content">
+        <div class="message">
+          message
         </div>
+        <div class="top_content">
+          <div class="map">
+            map
+          </div>
+          <div class="summary">summary</div>
+        </div>
+        <div class="graphs">
+          <div class="graph_div"></div>
+          <div class="graph_div"></div>
+          <div class="graph_div"></div>
+          <div class="graph_div"></div>
+          <div class="graph_div"></div>
+        </div>
+        <div class="history">history</div>
       </div>
     </div>
+  </div>
   );
 }
 

@@ -6,8 +6,8 @@ export default function MapComponent() {
     latitude: 15.2993,
     longitude: 74.1240,
     zoom: 6,
-    width: 500,
-    height: 500
+    width: 200,
+    height: 200
   });
 
   return (

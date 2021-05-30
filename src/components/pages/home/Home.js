@@ -18,18 +18,25 @@ function Home() {
             <div class="map">map</div>
             <div class="summary">summary</div>
           </div>
-          <div class="graphs">
-            <div class="graph_div"></div>
-            <div class="graph_div"></div>
-            <div class="graph_div"></div>
-            <div class="graph_div"></div>
-            <div class="graph_div"></div>
-          </div>
-          <div class="history">history</div>
+          <Graphs/>
+
         </div>
       </div>
     </div>
   );
 }
-
+export function Graphs() {
+  return (
+    <>
+      <div class="graphs">
+        <div class="graph_div"></div>
+        <div class="graph_div"></div>
+        <div class="graph_div"></div>
+        <div class="graph_div"></div>
+        <div class="graph_div"></div>
+      </div>
+      <div class="history">history</div>
+    </>
+  );
+}
 export default Home;

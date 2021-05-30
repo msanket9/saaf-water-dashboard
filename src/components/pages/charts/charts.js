@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../NavBar";
 import SideBar from "../Sidebar";
+import { Graphs } from "../home/Home";
 export default function charts() {
   return (
     <div class="container">
@@ -13,7 +14,7 @@ export default function charts() {
         </div>
         <div class="inner_content">
           <div class="message">message</div>
-          <div>charts</div>
+          <Graphs />
         </div>
       </div>
     </div>

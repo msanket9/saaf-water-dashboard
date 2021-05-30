@@ -85,9 +85,9 @@
   border-radius: 10px;
   overflow: hidden;
 }
-.maps_main{
+.maps_main {
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 
 .summary {
@@ -108,7 +108,7 @@
   width: 100%;
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
 }
 .graph_div {
@@ -149,16 +149,16 @@
   .graphs {
     grid-template-columns: 1fr 1fr;
   }
-  .top_content{
+  .top_content {
     flex-direction: column;
     height: fit-content;
   }
-  .map{
+  .map {
     margin-bottom: 10px;
   }
-  .map,.summary{
+  .map,
+  .summary {
     width: 100%;
     height: 300px;
   }
-
 }

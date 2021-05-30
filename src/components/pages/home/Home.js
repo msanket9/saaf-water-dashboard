@@ -7,6 +7,12 @@ import MapComponent from "../map/MapComponent"
 
 
 function Home() {
+
+  function closeMessages() {
+    const messages = document.getElementById("messages");
+    messages.style.display = "none";
+  }
+
   return (
     <div class="container">
       <div class="nav">
@@ -17,7 +23,9 @@ function Home() {
           <SideBar />
         </div>
         <div class="inner_content">
-          <div class="message">message</div>
+          <div class="message" id="messages">
+            <button onClick={closeMessages} >Close me</button>
+          </div>
           <div class="top_content">
             <div class="map"><MapComponent/></div>
             <div class="summary">summary</div>

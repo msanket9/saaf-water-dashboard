@@ -20,7 +20,7 @@ const LineChart = () => {
           pointStrokeColor: "rgb(0, 199, 79)",
           pointHighlightFill: "#fff",
           pointHighlightStroke: "rgb(0, 199, 79)",
-          data: [100, 56, 50, 68, 80]
+          data: [300,100, 56, 50, 68, 80]
         }
       ]
     };
@@ -33,7 +33,6 @@ const LineChart = () => {
       <Line
         options={{
           legend: {
-            maxHeight: 40,
             display: false,
             position: "bottom"
           },

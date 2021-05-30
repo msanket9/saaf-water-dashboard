@@ -86,6 +86,7 @@
   width: 100%;
   height: 500px;
 }
+
 .summary {
   background: linear-gradient(
     128.48deg,
@@ -105,13 +106,14 @@
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
+  gap: 10px;
 }
 .graph_div {
   background: #ffffff;
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
   border-radius: 7px;
+  height: 200px;
 }
 .lineChart {
   display: flex;

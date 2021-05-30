@@ -7,7 +7,7 @@ import OpacityTwoToneIcon from "@material-ui/icons/OpacityTwoTone";
 export default function SideBar() {
   return (
     <>
-      <NavLink exact activeClassName="active" to="/">
+      <NavLink exact activeClassName="active" to="/dashboard">
         <DashboardTwoToneIcon /> <h3>Dashboard</h3>
       </NavLink>
       <NavLink activeClassName="active" to="/charts">

@@ -4,7 +4,7 @@ import { Line } from "react-chartjs-2";
 const LineChart = () => {
   const data = (canvas) => {
     const ctx = canvas.getContext("2d");
-    const gradient = ctx.createLinearGradient(0, 0, 0, 100);
+    const gradient = ctx.createLinearGradient(0, 0, 0, 400);
     gradient.addColorStop(0, "rgb(0, 199, 79)");
     gradient.addColorStop(1, "rgba(250,174,50,0)");
     return {

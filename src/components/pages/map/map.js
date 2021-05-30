@@ -15,7 +15,7 @@ export default function map() {
         </div>
         <div class="inner_content">
           <div class="message">message</div>
-          <div><MapComponent/></div>
+          <div className="maps_main"><MapComponent/></div>
         </div>
       </div>
     </div>

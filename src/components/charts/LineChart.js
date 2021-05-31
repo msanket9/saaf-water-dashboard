@@ -7,8 +7,10 @@ const LineChart = ({ Graphdata }) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 400);
     gradient.addColorStop(0, "rgb(0, 199, 79)");
     gradient.addColorStop(1, "rgba(250,174,50,0)");
-
-    return Graphdata;
+    if (Graphdata) {
+      Graphdata.datasets[0].backgroundColor = gradient;
+      return Graphdata;
+    }
   };
 
   return Graphdata ? (

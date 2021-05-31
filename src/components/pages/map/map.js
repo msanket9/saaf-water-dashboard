@@ -5,16 +5,16 @@ import MapComponent from "./MapComponent";
 
 export default function map() {
   return (
-    <div class="container">
-      <div class="nav">
+    <div className="container">
+      <div className="nav">
         <NavBar />
       </div>
-      <div class="main_content">
-        <div class="sidebar">
+      <div className="main_content">
+        <div className="sidebar">
           <SideBar />
         </div>
-        <div class="inner_content">
-          <div class="message">message</div>
+        <div className="inner_content">
+          <div className="message">message</div>
           <div className="maps_main"><MapComponent/></div>
         </div>
       </div>

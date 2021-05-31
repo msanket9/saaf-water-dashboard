@@ -14,21 +14,21 @@ function Home() {
   }
 
   return (
-    <div class="container">
-      <div class="nav">
+    <div className="container">
+      <div className="nav">
         <NavBar />
       </div>
-      <div class="main_content">
-        <div class="sidebar">
+      <div className="main_content">
+        <div className="sidebar">
           <SideBar />
         </div>
-        <div class="inner_content">
-          <div class="message" id="messages">
-            <button class="messageButton" onClick={closeMessages} >Close me</button>
+        <div className="inner_content">
+          <div className="message" id="messages">
+            <button className="messageButton" onClick={closeMessages} >Close me</button>
           </div>
-          <div class="top_content">
-            <div class="map"><MapComponent/></div>
-            <div class="summary">summary</div>
+          <div className="top_content">
+            <div className="map"><MapComponent/></div>
+            <div className="summary">summary</div>
           </div>
           <Graphs/>
 
@@ -40,14 +40,14 @@ function Home() {
 export function Graphs() {
   return (
     <>
-      <div class="graphs">
-        <div class="graph_div"> <LineChart /> </div>
-        <div class="graph_div"> <LineChart /> </div>
-        <div class="graph_div"> <LineChart /> </div>
-        <div class="graph_div"> <LineChart /> </div>
-        <div class="graph_div" id="last-graph"> <LineChart /> </div>
+      <div className="graphs">
+        <div className="graph_div"> <LineChart /> </div>
+        <div className="graph_div"> <LineChart /> </div>
+        <div className="graph_div"> <LineChart /> </div>
+        <div className="graph_div"> <LineChart /> </div>
+        <div className="graph_div" id="last-graph"> <LineChart /> </div>
       </div>
-      <div class="history"> <LineChart /> </div>
+      <div className="history"> <LineChart /> </div>
     </>
   );
 }

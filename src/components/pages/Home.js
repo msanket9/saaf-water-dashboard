@@ -6,7 +6,7 @@ import {SidebarData} from './SidebarData'
 
 function Home() {
   return (
-    <div class="container">
+    <div className="container">
       <nav>Navbar</nav>
       <div id="main-content">
       <div className="sidebar">

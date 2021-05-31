@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+  HashRouter,
   BrowserRouter as Router,
   Switch,
   Route,
@@ -11,16 +12,14 @@ import Labtest from "./components/pages/labtest/labtest"
 
 function App() {
   return (
-    <Router>
-      <Switch>
+    <HashRouter basename='/'>
         <Route exact path="/saaf-water-dashboard/" component={home}/>
         <Route exact path="/" component={home}/>
         <Route exact path="/saaf-water-dashboard/dashboard" component={home}/>
         <Route  path="/saaf-water-dashboard/charts"component={Charts}/>
         <Route  path="/saaf-water-dashboard/maps"component={Map}/>
         <Route  path="/saaf-water-dashboard/labtest"component={Labtest}/>
-      </Switch>
-    </Router>
+  </HashRouter>
   )
 }
 

@@ -126,6 +126,7 @@
   box-sizing: border-box;
   border-radius: 7px;
   height: 200px;
+  padding: 10px;
 }
 
 .lineChart {

@@ -10,18 +10,18 @@ export default function SideBar() {
       <NavLink
         exact
         activeClassName="active"
-        to="/saaf-water-dashboard/dashboard"
+        to="/"
       >
         <DashboardTwoToneIcon /> <h3>Dashboard</h3>
       </NavLink>
-      <NavLink to="/saaf-water-dashboard/charts">
+      <NavLink to="/charts">
         <TimelineIcon />
         <h3>Charts</h3>
       </NavLink>
-      <NavLink to="/saaf-water-dashboard/maps">
+      <NavLink to="/maps">
         <MapTwoToneIcon /> <h3>Maps</h3>
       </NavLink>
-      <NavLink to="/saaf-water-dashboard/labtest">
+      <NavLink to="/labtest">
         <OpacityTwoToneIcon /> <h3>Lab Test</h3>
       </NavLink>
     </>

@@ -1,8 +1,6 @@
 import React from 'react'
 import {
   HashRouter,
-  BrowserRouter as Router,
-  Switch,
   Route,
 } from "react-router-dom";
 import home from "./components/pages/home/Home"
@@ -15,11 +13,11 @@ function App() {
     <HashRouter basename='/'>
         <Route exact path="/saaf-water-dashboard/" component={home}/>
         <Route exact path="/" component={home}/>
-        <Route exact path="/saaf-water-dashboard/dashboard" component={home}/>
-        <Route  path="/saaf-water-dashboard/charts"component={Charts}/>
-        <Route  path="/saaf-water-dashboard/maps"component={Map}/>
-        <Route  path="/saaf-water-dashboard/labtest"component={Labtest}/>
-  </HashRouter>
+        <Route exact path="/dashboard" component={home}/>
+        <Route  path="/charts"component={Charts}/>
+        <Route  path="/maps"component={Map}/>
+        <Route  path="/labtest"component={Labtest}/>
+    </HashRouter>
   )
 }
 

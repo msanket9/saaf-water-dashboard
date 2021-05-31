@@ -1,22 +1,23 @@
 import React from "react";
-import ReactMapGL from "react-map-gl";
+import "./map.css";
+
 
 export default function MapComponent() {
-  let [viewport, setViewport] = React.useState({
-    width: "100%",
-    height: "100%",
-    latitude: 15.2993,
-    longitude: 74.124,
-    zoom: 6,
-  });
 
   return (
-    <ReactMapGL
-      mapboxApiAccessToken={
-        "pk.eyJ1IjoibXNhbmtldDkiLCJhIjoiY2twYXo5bW5wMDJnMTJycnRoYjBseGtwNCJ9.P_dFx_rfgoALAEvtRm7iuQ"
-      }
-      {...viewport}
-      onViewportChange={(viewport) => setViewport(viewport)}
-    />
+  
+      <div class="embed-container">
+        <iframe width="100%" 
+                height="100%" 
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0" 
+                title="Saaf-Water" 
+                src="//www.arcgis.com/apps/Embed/index.html?webmap=fbadf2d08dd141aa8fbfe60a227e189b&extent=73.6904,14.9614,74.7046,15.5324&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&disable_scroll=true&theme=light">
+        </iframe>
+      </div>
+
+  
   );
 }

@@ -60,7 +60,7 @@ export function Graphs() {
       labels: ["1", "2", "20", "80", "10"],
       datasets: [
         {
-          label: "TDS",
+          label: "Turbidity",
           fill: "start",
           borderColor: "rgb(0, 199, 79)",
           backgroundColor: "rgb(0, 199, 79)",
@@ -77,7 +77,7 @@ export function Graphs() {
       labels: ["1", "2", "20", "80", "10"],
       datasets: [
         {
-          label: "TDS",
+          label: "pH",
           fill: "start",
           borderColor: "rgb(0, 199, 79)",
           backgroundColor: "rgb(0, 199, 79)",
@@ -94,7 +94,7 @@ export function Graphs() {
       labels: ["1", "2", "20", "80", "10"],
       datasets: [
         {
-          label: "TDS",
+          label: "Electrical Conductivity",
           fill: "start",
           borderColor: "rgb(0, 199, 79)",
           backgroundColor: "rgb(0, 199, 79)",
@@ -111,7 +111,7 @@ export function Graphs() {
       labels: ["1", "2", "20", "80", "10"],
       datasets: [
         {
-          label: "TDS",
+          label: "Temperature",
           fill: "start",
           borderColor: "rgb(0, 199, 79)",
           backgroundColor: "rgb(0, 199, 79)",
